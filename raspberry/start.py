@@ -11,7 +11,7 @@ client.connect(BROKER_ADDRESS) #connect to broker
 
 
 while True:
-    temp = "marc ist ein kek"#str(arduino.readline()) + "\nMarc ist ein Spinner!"
+    temp = str(arduino.readline())
     print(temp)
     client.publish("Temperatur", temp)#publish
     time.sleep(10)
